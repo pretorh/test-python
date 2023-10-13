@@ -1,4 +1,5 @@
 *.swp
+.env
 __pycache__/
 # distribution
 dist/

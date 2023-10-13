@@ -10,6 +10,13 @@ Basic Python project as an example for how to setup a project.
 - create empty `__init__.py` ("required to import the directory as a package, and should be empty.")
 - lint: ignore docstring issues (doc strings can be verbose)
 
+### virtual environment
+
+```
+python3 -m venv .env
+source .env/bin/activate
+```
+
 ### setup tools
 
 - create `src/setup.py`
