@@ -1,2 +1,5 @@
 *.swp
 __pycache__/
+# distribution
+dist/
+*.egg-info
