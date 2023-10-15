@@ -22,9 +22,16 @@ source .env/bin/activate
 - create `src/setup.py`
 - build source distribution: `python setup.py sdist`
 
-test locally:
+### pyproject.toml
 
-`pip install ./dist/simple_project_pretorh-0.0.1.tar.gz` and start `python`:
+- create `pyproject.toml`
+- upgrade `build`: `pip install --upgrade build`
+
+move project metadata into `pyproject.toml` (minimmal `setup.py`)
+
+### test locally
+
+`pip install ./dist/simple_project_pretorh-0.0.2.tar.gz` and start `python`:
 
 ```python
 from simple_project_pretorh import hello
@@ -43,3 +50,4 @@ twine upload --repository-url https://test.pypi.org/legacy/ dist/*
 
 - https://packaging.python.org/en/latest/tutorials/packaging-projects/
 - [high level/minimal](https://stackoverflow.com/a/47298178)
+- [pyproject_config.toml with setuptools](https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html)

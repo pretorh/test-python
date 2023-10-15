@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simple_project_pretorh"
+version = "0.0.2"
+description = "Basic Python project as an example for how to setup a project"
+keywords = ["example", "setup"]
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+authors = [
+    { name = "Hendri Pretorius", email = "pretorh@gmail.com" },
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pretorh/test-python"
+"Bug Tracker" = "https://github.com/pretorh/test-python/issues"
+
+#[tool.setuptools]
+#packages = ["simple_project_pretorh"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
