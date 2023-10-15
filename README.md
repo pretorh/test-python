@@ -45,6 +45,12 @@ pip install twine
 twine upload --repository-url https://test.pypi.org/legacy/ dist/*
 ```
 
+## CI: Github actions
+
+in `.github/workflows/`:
+- publish on release: `python-publish.yml`
+- lint on push: `pylint.yml`
+
 ## links
 
 - https://packaging.python.org/en/latest/tutorials/packaging-projects/
