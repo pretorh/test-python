@@ -17,21 +17,20 @@ python3 -m venv .env
 source .env/bin/activate
 ```
 
-### setup tools
+### create PyPi/pip-installable package
+
+#### setuptools and pyproject.toml
 
 - create `src/setup.py`
-- build source distribution: `python setup.py sdist`
-
-### pyproject.toml
-
 - create `pyproject.toml`
 - upgrade `build`: `pip install --upgrade build`
+- build: `python3 -m build`
 
-move project metadata into `pyproject.toml` (minimmal `setup.py`)
+Create project metadata in `pyproject.toml` (minimmal `setup.py`)
 
-### test locally
+#### test locally
 
-`pip install ./dist/simple_project_pretorh-0.0.2.tar.gz` and start `python`:
+`pip install ./dist/simple_project_pretorh-0.0.3.tar.gz` and start `python`:
 
 ```python
 from simple_project_pretorh import hello
