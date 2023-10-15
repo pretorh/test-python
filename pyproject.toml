@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "simple_project_pretorh"
-version = "0.0.4"
+version = "0.0.5"
 description = "Basic Python project as an example for how to setup a project"
 keywords = ["example", "setup"]
 readme = "README.md"
